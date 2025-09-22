@@ -72,7 +72,26 @@ func greet() {
 	fmt.Println("Unsigned Number:", unsignedNumber)
 }
 
+func lecture4() {
+	// Print
+	fmt.Print("Hello, World! ")
+
+	// Print with newline
+	fmt.Println("Hello, World!") // Print with newline
+
+	// Formatted Print
+	name := "Aravinda"
+	age := 25
+	height := 5.9
+	isStudent := true
+
+	fmt.Printf("Name: %s, Age: %d, Height: %.1f, Is Student: %t\n", name, age, height, isStudent)
+
+	// Save the formatted string to a variable
+	formattedString := fmt.Sprintf("Name: %s, Age: %d, Height: %.1f, Is Student: %t", name, age, height, isStudent)
+	fmt.Println(formattedString)
+}
+
 func main() {
-	fmt.Println("Hello, World!")
-	greet()
+	lecture4()
 }
